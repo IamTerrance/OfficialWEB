@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videography | Terrance Recommends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Terrance Recommends</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="videography.html">Videography</a></li>
+            <li><a href="financial.html">Financial Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h2>Wedding Videography Showcase</h2>
+        <p>Experience cinematic storytelling through my lens.</p>
+      </div>
+    </section>
+
+    <section class="videos">
+      <div class="container video-grid">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/DYzMD0aEbgs"
+            title="Sample wedding film"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h3>Romantic Vineyard Wedding</h3>
+        </div>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/EYJkYtJplwE"
+            title="Sample wedding film"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <h3>Beachside Celebration</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Terrance Recommends. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

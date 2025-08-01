@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Terrance Recommends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Contact specific styles */
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #111827;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+      .contact-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--color-tertiary);
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        border: 1px solid #1f2937;
+        background-color: #0f172a;
+        color: var(--color-text);
+      }
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: var(--color-primary);
+      }
+      .contact-form button {
+        display: inline-block;
+        background-color: var(--color-primary);
+        color: #0b101b;
+        padding: 0.8rem 1.4rem;
+        border-radius: 4px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .contact-form button:hover {
+        background-color: var(--color-tertiary);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Terrance Recommends</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="videography.html">Videography</a></li>
+            <li><a href="financial.html">Financial Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>Have a question or just want to say hi? Send a message!</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Terrance Recommends. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendations | Terrance Recommends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Terrance Recommends</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="videography.html">Videography</a></li>
+            <li><a href="financial.html">Financial Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h2>Curated Recommendations</h2>
+        <p>Browse some of my favourite tools and products for creatives.</p>
+      </div>
+    </section>
+
+    <section class="recommendations-grid">
+      <div class="container">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+            alt="Camera Lens"
+          />
+          <div class="card-content">
+            <h3>Mirrorless Camera</h3>
+            <p>
+              My go‑to camera for stills and video. Incredible image quality in a
+              compact body.
+            </p>
+            <a class="btn btn-primary" href="#">Buy on Amazon</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+            alt="Laptop workstation"
+          />
+          <div class="card-content">
+            <h3>Productivity Laptop</h3>
+            <p>
+              A powerhouse laptop built for editing, coding and multitasking
+              without compromise.
+            </p>
+            <a class="btn btn-primary" href="#">Learn More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80"
+            alt="Travel backpack"
+          />
+          <div class="card-content">
+            <h3>Adventure Backpack</h3>
+            <p>
+              A versatile backpack designed to carry camera gear, laptops and
+              essentials for shooting on the go.
+            </p>
+            <a class="btn btn-primary" href="#">See Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Terrance Recommends. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

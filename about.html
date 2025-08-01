@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Terrance Recommends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Terrance Recommends</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="videography.html">Videography</a></li>
+            <li><a href="financial.html">Financial Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h2>About Terrance</h2>
+        <p>Connecting creativity and business with purpose.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <p>
+          Hello, I'm Terrance, a wedding videographer, content creator and
+          curator of tools that empower creators. I started this site to share
+          the gear, services and resources that help me produce meaningful work.
+          Whether I'm filming a dreamy ceremony or editing at midnight, I
+          constantly refine my toolkit so I can focus on storytelling. When I'm
+          not behind the camera, you can catch me discussing finance and
+          entrepreneurship with fellow creatives.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Terrance Recommends. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

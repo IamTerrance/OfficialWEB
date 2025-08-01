@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terrance Recommends</title>
+    <!-- Google font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Terrance Recommends</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="videography.html">Videography</a></li>
+            <li><a href="financial.html">Financial Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Discover curated gear and resources</h2>
+        <p>
+          Welcome to my world of trusted recommendations! I test gear, services and
+          tools so you don’t have to. Browse the latest picks for photographers,
+          creatives and entrepreneurs.
+        </p>
+        <div class="cta-buttons">
+          <a class="btn btn-primary" href="recommendations.html">Explore Recommendations</a>
+          <a class="btn btn-secondary" href="videography.html">Watch Videography</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-card">
+          <h3>Handpicked Picks</h3>
+          <p>
+            Each item is personally tested and reviewed. From cameras to
+            productivity tools, I only recommend what I love.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Wedding Videography</h3>
+          <p>
+            Explore cinematic wedding films crafted with care. See how I capture
+            moments and learn tips to elevate your own projects.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Finance &amp; Business</h3>
+          <p>
+            Coming soon! I’ll share actionable insights on financial growth and
+            business strategies for creative entrepreneurs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Terrance Recommends. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Set current year automatically in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
